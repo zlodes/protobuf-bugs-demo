@@ -1,0 +1,29 @@
+{
+    "name": "zlodes/protobuf-bugs-demo",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Zlodes\\ProtobufDemo\\": "tests/",
+            "Demo\\": "protobuf/generated/Demo/",
+            "GPBMetadata\\": "protobuf/generated/GPBMetadata/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zlatoslav Desyatnikov",
+            "email": "px.zlodes@gmail.com"
+        }
+    ],
+    "require": {
+        "google/protobuf": "^3.19",
+        "phpunit/phpunit": "^9.5"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "scripts": {
+        "protobuf:generate": [
+            "protoc --proto_path=protobuf --php_out=protobuf/generated protobuf/proto/*.proto"
+        ]
+    }
+}

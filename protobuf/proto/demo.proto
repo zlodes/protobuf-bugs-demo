@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package demo;
+
+message Foo {
+    fixed64 fixed64 = 1;
+    uint64 uint64 = 2;
+}
