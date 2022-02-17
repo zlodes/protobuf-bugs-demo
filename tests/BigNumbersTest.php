@@ -9,7 +9,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 use Demo\Foo;
 use PHPUnit\Framework\TestCase;
 
-final class TestBigNumbers extends TestCase
+final class BigNumbersTest extends TestCase
 {
     public function testFixed64(): void
     {

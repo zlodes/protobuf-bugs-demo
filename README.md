@@ -1,6 +1,6 @@
 # Protobuf big numbers bug
 
-See [tests/TestBigNumbers.php](tests/TestBigNumbers.php)
+See [tests/TestBigNumbers.php](tests/BigNumbersTest.php)
 
 Protoc version:
 ```
